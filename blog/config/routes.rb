@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  resources :EndUserBaseControllerController
+  devise_for :users
 
   root 'welcome#index'
 end
